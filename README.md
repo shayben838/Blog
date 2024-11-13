@@ -66,3 +66,18 @@ Here's an overview of the scripts in package.json:
 
 License
 This project is licensed under the ISC License.
+
+Admin Route
+The blog application includes an Admin Route for managing posts and other administrative tasks. This route is restricted to authenticated users, allowing only authorized personnel to access and perform administrative actions.
+
+Accessing the Admin Route
+To access the admin section, users need to sign in with their credentials through the /admin route.
+Once authenticated, users are redirected to the admin dashboard to manage blog content.
+
+Note: For development and testing, you may choose to create a registration route temporarily (such as /register) to add users with admin permissions. However, it is recommended to disable or secure this route in production to prevent unauthorized access.
+
+File Structure
+The view template for the admin login is located at:
+views/admin/index.ejs
+
+This file contains the login form and is rendered when users navigate to the /admin route. Customize this template to suit your application's styling and security needs.
